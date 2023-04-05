@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background: #e0e8ff url("../img/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+
+
+
+}
+
+.container {
+    max-width: 380px;
+    background-color: #fff;
+    border-radius: 1.2em;
+    overflow: hidden;
+
+}
+
+.image {
+    width: 100%;
+}
+
+.music-plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.content {
+    padding: 1em 2em;
+}
+
+.content h1 {
+    margin: 0.5em;
+    font-size: 1.7rem;
+}
+
+.content p {
+    color: grey;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.content h1, p {
+    text-align: center;
+}
+
+.music-plan {
+    background-color: #f5f7ff;
+    padding: 1.3em 1em;
+    border-radius: 0.5em;
+    margin-top: 1.5em;
+}
+
+.note-with-price {
+    display: flex;
+}
+
+.note {
+    width: 40px;
+    height:40px;
+    margin-right: 1em;
+}
+
+.price h4 , p {
+    text-align: left;
+    font-size: 0.8rem ;
+}
+
+.year {
+    font-size: 0.8rem;
+}
+
+.music-plan a {
+    font-size: 0.9rem;
+}
+
+.proceed-button {
+    background-color: #3829e0;
+    color: #fff;
+    width: 100%;
+    margin-top: 2em;
+    padding: 0.9em;
+    border: none;
+    border-radius: 0.7em;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 5px 15px #1146d9;
+}
+
+.proceed-button:hover , 
+.proceed-button:active {
+    background-color: #5b4eef;
+}
+
+.cancel-button {
+    background-color: #fff;
+    color: grey;
+    width: 100%;
+    margin-top: 2em;
+    padding: 0.9em;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.7em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.cancel-button:hover , 
+.cancel-button:active {
+    background-color:#f7f7f7; 
+   color: #000;
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        margin: 1em;
+    }
+}
